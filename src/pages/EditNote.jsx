@@ -19,7 +19,7 @@ const EditNote = ({ id,onClose, noteData, updateNote }) => {
 
     return (
         <div className="fixed top-0 left-0 flex justify-center items-center w-full h-full bg-black bg-opacity-50 z-50">
-            <div className="p-5 bg-white rounded-lg w-full max-w-md relative">
+            <div className="p-5 bg-white rounded-lg w-full lg:max-w-md max-w-xs relative">
                 <button className="text-3xl absolute right-4" onClick={onClose}><MdCancel /></button>
                 <h2 className='text-lg font-semibold mb-4'>Edit Note</h2>
                 <input
@@ -45,7 +45,7 @@ const EditNote = ({ id,onClose, noteData, updateNote }) => {
                     onChange={(e) => setMessageBody(e.target.value)}
                 ></textarea>
                 <div className="flex justify-start">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mr-2" onClick={handleSubmit}>Update</button>
+                    <button className="bg-primary-color hover:bg-[#c48942] text-white px-4 py-2 rounded-md mr-2" onClick={handleSubmit}>Update</button>
                 </div>
             </div>
         </div>

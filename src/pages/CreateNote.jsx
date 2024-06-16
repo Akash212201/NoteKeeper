@@ -23,8 +23,8 @@ const CreateNote = ({ passNote }) => {
     };
 
     return (
-        <div className="mt-3 flex justify-center items-center " >
-            <div className="bg-white p-5 rounded w-[450px] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
+        <div className="mt-3 flex justify-center items-center lg:pt-0 pt-10" >
+            <div className="bg-white p-5 rounded lg:w-[450px] w-[310px] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
                 <input
                     type="text"
                     placeholder="Title..."

@@ -64,11 +64,6 @@ const App = () => {
     });
   };
   
-  
-  
-  
-
-
   // Open edit popup for a note
   const openEditPopup = (index) => {
     setSelectedNoteIndex(index);
@@ -100,11 +95,11 @@ const App = () => {
   const pagination = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div>
+    <div className='relative min-h-screen'>
       <Header setSearchQuery={setSearchQuery} />
       <CreateNote passNote={addNote} />
 
-      <div className='px-10 py-2 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1'>
+      <div className='lg:px-10 px-4 py-2 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 !pb-28'>
         {currentNotes.map((note, index) => (
           <Note
             key={index}
